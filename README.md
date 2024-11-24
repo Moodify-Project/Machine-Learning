@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Berikut adalah daftar dependensi yang digunakan dalam proyek ini:
+"Berikut adalah daftar dependensi yang digunakan dalam proyek ini:
 asttokens==2.4.1
 click==8.1.7
 colorama==0.4.6
@@ -47,4 +47,4 @@ tornado==6.4.2
 tqdm==4.67.0
 traitlets==5.14.3
 tzdata==2024.2
-wcwidth==0.2.13
+wcwidth==0.2.13"
