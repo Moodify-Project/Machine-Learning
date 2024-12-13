@@ -1,60 +1,82 @@
-# Emotion Detection from text
-Designing a deep learning model to detect emotions from text using TensorFlow, Developing LSTM and BiLSTM models to analyze and classify emotions based on sentences provided by users.
+# Emotion Detection from Text
 
 ## Project Overview
-This project aims to build a machine learning model that detects emotions from text, using a dataset containing text labeled with emotions such as 'sadness', 'happiness', 'anger', 'worry', and 'enthusiasm'. After data cleaning and downsampling for class balance, LSTM and BiLSTM models were trained to predict emotions. This model will be implemented in applications "Moodify" to analyze user emotions based on their text, using Python, TensorFlow, and Keras.
 
+**Moodify: Emotion Analysis through Deep Learning**
 
-## Dataset
-The dataset consists of Twitter messages labeled with emotions. Each entry in the dataset represents a text segment and the dominant emotion expressed. The emotions are classified into five categories:
-- Sadness
-- Happiness
-- Anger
-- Worry
-- Enthusiasm
-  
-The dataset is available [here](https://github.com/Moodify-Project/Machine-Learning/tree/main/Dataset)
+This innovative project uses the latest machine learning techniques to detect and classify emotions from text data. By leveraging neural network architectures such as LSTM and BiLSTM, we have developed a robust solution for understanding emotions in text.
 
-## Feature
-- Emotion classification from text data
-- Cleaned and preprocessed text using NLP techniques
-- Balanced dataset using downsampling for each class
-- Visualizations of word frequencies and word clouds for each emotion
-- Trainable deep learning models (LSTM, BiLSTM) for emotion classification
+## Key Objectives
 
-## Requirements 
-- Tensorflow 
-- Matplothlib
-- Numpy
+- Develop an intelligent emotion classification system
+- Analyze text data using state-of-the-art deep learning models
+- Provide insights into emotional context of text
+
+## Dataset Composition
+
+Our dataset comprises Twitter messages meticulously labeled with five primary emotional categories:
+
+| Emotion | Description |
+|---------|-------------|
+| 😢 Sadness | Expressions of grief, sorrow, or melancholy |
+| 😄 Happiness | Texts conveying joy, pleasure, or excitement |
+| 😠 Anger | Messages expressing frustration or irritation |
+| 😰 Worry | Texts indicating anxiety or concern |
+| 🎉 Enthusiasm | Energetic and passionate communications |
+
+**Dataset Source:** [Emotion Classification Dataset](https://github.com/Moodify-Project/Machine-Learning/tree/main/Dataset)
+
+## Key Features
+
+- Advanced emotion classification using deep learning
+- Comprehensive text preprocessing and cleaning
+- Balanced dataset through intelligent downsampling
+- Detailed visualizations of word frequencies
+- Flexible and trainable neural network models
+
+## Technology Stack
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+
+### Required Libraries
+
+- TensorFlow
+- Matplotlib
+- NumPy
 - Seaborn
 - NLTK
 - WordCloud
 - Scikit-learn
-- NFX
 
-## Model Architecture
-Two models were developed and trained to classify emotions from text:
-LSTM Model:
-- Embedding layer
-- Dropout layer for regularization
-- LSTM layer for sequential data processing
-- Dense layer with softmax activation for emotion classification
+## Model Architectures
 
-BiLSTM Model:
-- Embedding layer
-- Spatial Dropout layer for regularization
-- Bi-directional LSTM layers for better sequential data handling
-- Dense layer with softmax activation for emotion classification
+### 1. LSTM Model
+- **Embedding Layer**: Transforms text into dense vector representations
+- **Dropout Layer**: Prevents overfitting
+- **LSTM Layer**: Captures sequential dependencies
+- **Dense Layer**: Emotion classification with softmax activation
 
-Both models were compiled with the Adam optimizer and categorical cross-entropy loss function.
+### 2. BiLSTM Model
+- **Embedding Layer**: Text vectorization
+- **Spatial Dropout**: Advanced regularization
+- **Bi-directional LSTM**: Captures context from both directions
+- **Dense Layer**: Multi-class emotion prediction
 
-## Documentation
-![Deskripsi Gambar](https://github.com/Moodify-Project/Machine-Learning/blob/main/Media/LSTM.png)
-![Deskripsi Gambar](https://github.com/Moodify-Project/Machine-Learning/blob/main/Media/BiLSTM.png)
+## Performance Metrics
 
-## Results
-LSTM Model: The model shows steady improvement, achieving a final training accuracy of 92.12% with a validation accuracy of 89.99%.
-BiLSTM Model: The BiLSTM model outperformed the LSTM model with a final training accuracy of 93.67% and a validation accuracy of 90.68% after.
+| Model | Training Accuracy | Validation Accuracy |
+|-------|------------------|---------------------|
+| LSTM | 92.12% | 89.99% |
+| BiLSTM | 93.67% | 90.68% |
 
+## Model Visualizations
 
+- [LSTM Architecture](https://github.com/Moodify-Project/Machine-Learning/blob/main/Media/LSTM.png)
+- [BiLSTM Architecture](https://github.com/Moodify-Project/Machine-Learning/blob/main/Media/BiLSTM.png)
 
+## Future Improvements
+
+- Expand emotion categories
+- Implement transfer learning
